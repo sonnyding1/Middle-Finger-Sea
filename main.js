@@ -44,6 +44,7 @@ const particlesMaterial = new THREE.PointsMaterial({
 });
 particlesMaterial.map = particleTexture;
 particlesMaterial.transparent = true;
+particlesMaterial.alphaMap = particleTexture;
 
 const particles = new THREE.Points(particlesGeometry, particlesMaterial);
 scene.add(particles);
